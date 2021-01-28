@@ -38,7 +38,11 @@ There are many different modbus tcp simulators out in the internet that can be u
 
 After installing and starting the runtime visit localhost:8080 to open the user interface.
 
-![Screenshot](misc/OpenPLC_Einstellungen_program.png)
+![Screenshot](misc/OpenPLC_Einstellungen_Program.png)
+
+![Screenshot](misc/OpenPLC_Einstellungen_SlaveDevice.png)
+
+![Screenshot](misc/OpenPLC_Einstellungen_Settings.png)
 
 
 
