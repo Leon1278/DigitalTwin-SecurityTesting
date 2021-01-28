@@ -1,2 +1,2 @@
 # DigitalTwin-ScurityTesting
-![Screenshot](DigitalerZwilling.png)
+![Screenshot](misc/DigitalerZwilling.png)
