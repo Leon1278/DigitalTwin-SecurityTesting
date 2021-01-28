@@ -38,11 +38,15 @@ There are many different modbus tcp simulators out in the internet that can be u
 
 After installing and starting the runtime visit localhost:8080 to open the user interface.
 
-First click the program tab and upload the boiler.st file.
+First click on the programs tab and upload the boiler.st file.
 
 ![Screenshot](misc/OpenPLC_Einstellungen_Program.png)
 
+Next click on the slave devices tab and enter the following settings.
+
 ![Screenshot](misc/OpenPLC_Einstellungen_SlaveDevice.png)
+
+Last click on the settings tab to do some small changes here also.
 
 ![Screenshot](misc/OpenPLC_Einstellungen_Settings.png)
 
