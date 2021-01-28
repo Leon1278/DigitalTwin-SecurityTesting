@@ -42,7 +42,7 @@ First click on the programs tab and upload the boiler.st file.
 
 ![Screenshot](misc/OpenPLC_Einstellungen_Program.png)
 
-Next click on the slave devices tab and enter the following settings.
+Next click on the slave devices tab and enter the following settings. The ip address should be the address of your virtual maschine where your input/output-simulator is running.
 
 ![Screenshot](misc/OpenPLC_Einstellungen_SlaveDevice.png)
 
