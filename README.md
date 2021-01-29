@@ -1,4 +1,4 @@
-# DigitalTwin-ScurityTesting
+# DigitalTwin-SecurityTesting
 
 The following screenshot outlines the BoilerICS-DigitalTwin. The digital twin simulates an industrial control system (ICS) securing a boiler against failure caused by increasing pressure isnide the boiler. It consists of a PLC, a HMI and an input/output - simulator hosted in seperate virtual maschines. The components communicate using the modbus TCP protokoll.
 
