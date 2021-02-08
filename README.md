@@ -66,22 +66,22 @@ After starting the VM where ScadaBR is hosted, visit the URL promted in the term
 
 To Setup Metasploit visit https://www.rapid7.com/de/products/metasploit/ or install a pentesting distribution like Linux Kali or Parrot OS. We used a VM which hosted a linux kali distribution.
 
-Start Metasploit Framework
+1. Start the Metasploit Framework
 
-Markup :  `msfconsole`
+`msfconsole`
 
-Search for modbus Modules
+2. Search for modbus Modules
 
-search modbus
+`search modbus`
 
-Select the right module 
+3. Select the right module 
 
-use scanner/scada/modbusdetect
+`use scanner/scada/modbusdetect`
 
-Display options
+4. Display options
 
-show options
+`show options`
 
-From here set the RHOSTS and choose an ACTION you want to perform. Regarding to that ACTION set some more options that are required, for example: ACTION WRITE_REGISTERS requires the STARTING_ADDRESS of the register and the new DATA to be set.
+5. From here set the RHOSTS and choose an ACTION you want to perform. Regarding to that ACTION set some more options that are required, for example: ACTION WRITE_REGISTERS requires the STARTING_ADDRESS of the register and the new DATA to be set.
 
 ## C++ Script
