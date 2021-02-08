@@ -59,3 +59,29 @@ Just start EasyModbusTCPServer Simulator and go to the tab Input Registers on th
 ### ScadaBR HMI
 
 After starting the VM where ScadaBR is hosted, visit the URL promted in the terminal. After that choose Iiport in the settings and copy paste the json code from the scadabr_hmi.json file above.
+
+# Attack Scenarios
+
+## Metasploit Framework
+
+To Setup Metasploit visit https://www.rapid7.com/de/products/metasploit/ or install a pentesting distribution like Linux Kali or Parrot OS. We used a VM which hosted a linux kali distribution.
+
+Start Metasploit Framework
+
+msfconsole
+
+Search for modbus Modules
+
+search modbus
+
+Select the right module 
+
+use scanner/scada/modbusdetect
+
+Display options
+
+show options
+
+From here set the RHOSTS and choose an ACTION you want to perform. Regarding to that ACTION set some more options that are required, for example: ACTION WRITE_REGISTERS requires the STARTING_ADDRESS of the register and the new DATA to be set.
+
+## C++ Script
