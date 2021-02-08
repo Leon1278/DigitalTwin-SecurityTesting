@@ -90,6 +90,6 @@ To Setup Metasploit visit https://www.rapid7.com/de/products/metasploit/ or inst
 
 `g++ injection_attack.cpp -o injection_attack -pthread`
 
-2. Execute the Script against the openPLC runtime Host 
+2. Execute the Script against the openPLC runtime Host. We recommend using the script with frequency around 50.000
 
 `./injection_attack -h [host ip] -f [frequency of the messages]`
