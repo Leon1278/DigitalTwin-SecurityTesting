@@ -58,7 +58,7 @@ Just start EasyModbusTCPServer Simulator and go to the tab Input Registers on th
 
 ### ScadaBR HMI
 
-After starting the VM where ScadaBR is hosted, visit the URL promted in the terminal. After that choose Iiport in the settings and copy paste the json code from the scadabr_hmi.json file above.
+After starting the VM where ScadaBR is hosted, visit the URL promted in the terminal. After that choose Import in the settings and copy paste the json code from the scadabr_hmi.json file above.
 
 # Attack Scenarios
 
