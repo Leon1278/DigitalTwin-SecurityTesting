@@ -85,3 +85,11 @@ To Setup Metasploit visit https://www.rapid7.com/de/products/metasploit/ or inst
 5. From here set the RHOSTS and choose an ACTION you want to perform. Regarding to that ACTION set some more options that are required, for example: ACTION WRITE_REGISTERS requires the STARTING_ADDRESS of the register and the new DATA to be set.
 
 ## C++ Script
+
+1. Compile C++ Script using g++
+
+`g++ injection_attack.cpp -o injection_attack -pthread`
+
+2. Execute the Script against the openPLC runtime Host 
+
+`./injection_attack -h [host ip] -f [frequency of the messages]`
