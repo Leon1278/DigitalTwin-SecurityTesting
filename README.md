@@ -53,8 +53,9 @@ Last click on the settings tab to do some small changes here also.
 
 ### Input/Output-Simulator
 
+Just start EasyModbusTCPServer Simulator and go to the tab Input Registers on the right upper side of the GUI. Then you can manipulate the Register with starting address 1.
 
 
 ### ScadaBR HMI
 
-After starting the VM where ScadaBR is hosted, visit the URl promted in the terminal. After that choose inport in the settings and copy paste the json code from the file above. 
+After starting the VM where ScadaBR is hosted, visit the URL promted in the terminal. After that choose Iiport in the settings and copy paste the json code from the scadabr_hmi.json file above.
