@@ -53,7 +53,8 @@ Last click on the settings tab to do some small changes here also.
 
 ### Input/Output-Simulator
 
+
+
 ### ScadaBR HMI
 
-
-
+After starting the VM where ScadaBR is hosted, visit the URl promted in the terminal. After that choose inport in the settings and copy paste the json code from the file above. 
